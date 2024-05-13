@@ -1,3 +1,12 @@
+import Layout from "@/components/Layout";
+import NewCountries from "@/components/NewCountries";
+import AddCountry from "@/components/AddCountry";
+
 export default function Home() {
-  return <h1>Hello, wilder !</h1>;
+  return (
+    <Layout title="Checkpoint - Frontend">
+      <AddCountry />
+      <NewCountries />
+    </Layout>
+  );
 }
