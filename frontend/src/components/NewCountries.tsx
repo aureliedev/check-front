@@ -5,14 +5,13 @@ import CountryCard from "./CountriesCard";
 
 export default function NewCountries() {
   const { data, loading, refetch } = useCountriesQuery();
+  const countries = data?.countries || [];
 
   useEffect(() => {
     refetch();
   }, []);
 
   if (loading) return "Loading...";
-
-  const countries = data?.countries || [];
 
   return (
     <div>
