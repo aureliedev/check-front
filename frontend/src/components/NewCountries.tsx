@@ -15,7 +15,7 @@ export default function NewCountries() {
   const countries = data?.countries || [];
 
   return (
-    <div className="country-card">
+    <div>
       {countries.map((country) => (
         <CountryCard
           key={country.id}

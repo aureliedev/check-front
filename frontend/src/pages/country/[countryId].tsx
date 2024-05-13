@@ -38,7 +38,7 @@ export default function CountryDetails() {
     <div>
       <Layout title="Checkpoint - Frontend">
         {data && country && (
-          <div>
+          <div className="country-card">
             <h1>{country.name}</h1>
             <p>Code: {country.code}</p>
             <p>Emoji: {country.emoji}</p>
